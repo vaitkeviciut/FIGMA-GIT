@@ -1,0 +1,77 @@
+.nav-container {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    .nav-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 40px;
+        @include xs {
+            padding: 30px 30px;
+        }
+        .nav-logo {
+            padding-right: 48px;
+            @include xxl {
+                padding-right: 30px;
+            }
+            @include s {
+                width: 200px;
+            }
+            @include xs {
+                width: 150px;
+            }
+        }
+        .nav-menu-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+            @include xxl {
+                gap: 30px;
+            }
+            ul.nav-menu-1 {
+                padding-left: 0;
+                display: flex;
+                gap: 48px;
+                @include xxl {
+                    gap: 30px;
+                }
+                @include xl {
+                    display: none;
+                }
+                li.nav-menu-item {
+                    list-style-type: none;
+                    a.nav-menu-item-link {
+                        text-decoration: none;
+                        color: $text-neutral-2;
+                    }
+                    a.nav-menu-item-link:hover {
+                        color: $text-color-headers;
+                    }
+                }
+            }
+            img {
+                display: none;
+                @include xl {
+                    display: inline;
+                }
+            }
+            .nav-menu-2 {
+                @include m {
+                    display: none;
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                    padding: 15px 20px;
+                    background: rgb(100,123,100);
+                    background: linear-gradient(135deg, rgba(100,123,100,1) 18%, rgba(102,172,102,1) 99%);
+                }
+                a:hover {
+                    background: $button-color-hover;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,131 @@
+.hero-box-wrapper {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    img.girl {
+        position: absolute;
+        right: 10%;
+        z-index: -100;
+        overflow: hidden;
+        @include l {
+            right: -20%;
+        }
+        @include s {
+            right: -35%;
+        }
+        @include xs {
+            right: -35%; top: -7%;
+            min-width: 250px;
+            max-width: 290px;
+        }
+    }
+
+    img.ellipse-bw {
+        position: absolute;
+        left: -20%; top: 65%;
+    }
+    .hero-box-content-wrapper {
+        max-width: 490px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 146px 0 166px;
+        margin-left: 80px;
+        background-image: url(images/elipse.svg);
+        background-repeat: no-repeat;
+        background-position: 40% 23%;
+        @include l {
+            margin-left: 70px;
+            padding: 126px 0 166px;
+        }
+        @include m {
+            margin-left: 60px;
+            padding: 110px 0 166px;
+        }
+        @include s {
+            margin-left: 45px;
+            margin-right: 45px;
+            padding: 80px 0 166px;
+        }
+        @include xs {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        .hero-box-text-wrapper {
+            @include l {
+                width: 80%;
+            }
+            @include xs {
+                width: 100%;
+            }
+            .hero-box-title {
+                font-size: 35px;
+                font-weight: 700;
+                line-height: 1.4;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $text-neutral-2;
+                @include xl {
+                    font-size: 30px;
+                }
+                @include l {
+                    font-size: 27px;
+                }
+                @include m {
+                    font-size: 24px;
+                }
+                @include s {
+                    font-size: 20px;
+                }
+                @include xs {
+                    font-size: 18px;
+                }
+            }
+            .hero-box-text {
+                line-height: 1.4;
+                letter-spacing: 1px;
+                width: 85%;
+                color: $text-neutral-1;
+                @include m {
+                    font-size: 15px;
+                }
+                @include s {
+                    font-size: 14px;
+                    width: 100%;
+                }
+                @include xs {
+                    font-size: 12px;
+                }
+            }
+        }
+        a.button {
+            text-decoration: none;
+            color: white;
+            width: 65%;
+            max-width: 350px;
+            min-width: 230px;
+            padding: 20px;
+            background: rgb(100,123,100);
+            background: $button-color-main;
+            display: flex;
+            justify-content: space-between;
+            @include xs {
+                padding: 15px;
+                min-width: 160px;
+                width: 55%;
+            }
+            .button-text {
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 13px;
+                font-weight: 700;
+                @include xs {
+                    font-size: 10px;
+                }
+            }
+            
+        }
+        a.button:hover {
+            background: $button-color-hover;
+        }
+    }
+}

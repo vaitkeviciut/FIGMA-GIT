@@ -1,0 +1,134 @@
+.content-2-wrapper {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    .content-2-title-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 17px;
+        text-align: center;
+        padding: 56px 40px;
+        @include m {
+            padding: 36px 40px;
+        }
+        @include s {
+            padding: 26px 40px;
+        }
+        @include xs {
+            padding: 26px 40px;
+        }
+        .content-2-title-1 {
+            text-transform: uppercase;
+            font-size: 20px;
+            color: $text-color-accent;
+            font-weight: 500;
+            margin-bottom: 0;
+            @include m {
+                font-size: 17px;
+            }
+            @include s {
+                font-size: 15px;
+            }
+            @include xs {
+                font-size: 15px;
+            }
+        }
+        .content-2-title-2 {
+            text-transform: uppercase;
+            font-size: 35px;
+            color: $text-color-headers;
+            font-weight: 500;
+            margin: 0;
+            @include m {
+                font-size: 24px;
+            }
+            @include s {
+                font-size: 20px;
+            }
+            @include xs {
+                font-size: 20px;
+            }
+        }
+    }
+    .content-2-select-wrapper {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        padding: 20px 0 50px 40px;
+        overflow: hidden;
+        .dots {
+            position: absolute;
+            left: 0; bottom: -2%;
+            z-index: -100;
+            @include m {
+                left: 5%; bottom: 3%;
+            }
+        }
+        .rectangle {
+            position: absolute;
+            right: -55%; bottom: -2%;
+            z-index: -100;
+            overflow: hidden;
+            @include xl {
+               display: none;
+            }
+        }
+        .select-wrapper a {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            padding: 78px 50px 72px 50px;
+            background: rgb(223,227,223);
+            background: linear-gradient(0deg, rgba(223,227,223,1) 5%, rgba(255,255,255,1) 43%);
+            border-radius: 8px;
+            text-decoration: none;
+            min-width: 157px;
+            @include xxl {
+                min-width: 300px;
+            }
+            @include m {
+                min-width: 250px;
+                padding: 38px 25px 42px 25px;
+            }
+            @include s {
+                min-width: 230px;
+            }
+            @include xs {
+                min-width: 200px;
+            }
+            .select-icon {
+                fill: $text-color-headers;
+            }
+            .select-text-wrapper {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 6px;
+                .select-title {
+                    font-size: 17px;
+                    text-transform: uppercase;
+                    color: $text-neutral-2;
+                    margin: 0;
+                }
+                .select-text {
+                    font-size: 13px;
+                    color: $text-neutral-1;
+                    margin: 0;
+                    line-height: 1.4;
+                }
+            }
+        }
+        .select-wrapper a:hover {
+            background: $text-color-headers;
+            .select-icon {
+                fill: white;
+            }
+            .select-text-wrapper {
+                .select-title {
+                    color: white;
+                }
+                .select-text {
+                    color: white;
+                }
+            }
+        }
+    }
+}

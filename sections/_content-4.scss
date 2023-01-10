@@ -1,0 +1,174 @@
+.content-4-wrapper {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 150px;
+    @include xs {
+        padding-bottom: 70px;
+    }
+    .content-4-title-wrapper {
+        padding: 56px 40px;
+        display: flex;
+        justify-content: space-between;
+        @include xs {
+            padding: 26px 30px;
+        }
+        .content-4-title-text-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 17px;
+            .content-4-title-1 {
+                text-transform: uppercase;
+                font-size: 20px;
+                color: $text-color-accent;
+                font-weight: 500;
+                margin-bottom: 0;
+                @include xxl {
+                    font-size: 18px;
+                }
+                @include l {
+                    font-size: 17px;
+                }
+                @include s {
+                    font-size: 16px;
+                }
+                @include xs {
+                    font-size: 15px;
+                }
+            }
+            .content-4-title-2 {
+                text-transform: uppercase;
+                font-size: 35px;
+                color: $text-color-headers;
+                font-weight: 500;
+                margin: 0;
+                @include xxl {
+                    font-size: 32px;
+                }
+                @include l {
+                    font-size: 28px;
+                }
+                @include s {
+                    font-size: 21px;
+                }
+                @include xs {
+                    font-size: 20px;
+                }
+            }
+        }
+        .content-4-title-arrows-wrapper {
+            display: flex;
+            gap: 35px;
+            align-items: center;
+            cursor: pointer;
+            @include l {
+                display: none;
+            }
+            .arrow-1-icon {
+                fill: $text-color-headers;
+            }
+            .arrow-1-icon:hover {
+                fill: $button-color-hover;
+            }
+            .arrow-2-icon {
+                fill: white;
+                border-radius: 50%;
+                width: 75px;
+                height: 75px;
+                padding: 17px;
+                background: rgb(100,123,100);
+                background: $button-color-main;
+            }
+            .arrow-2-icon:hover {
+                background: $button-color-hover;
+            }
+        }
+    }
+    .people-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        padding-top: 20px;
+        padding-left: 40px;
+        overflow: hidden;
+        @include xl {
+            gap: 30px;
+        }
+        @include l {
+            gap: 20px;
+        }
+        @include m {
+            gap: 15px;
+        }
+        
+        .person-wrapper a {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 32px 32px 32px 40px;
+            border-radius: 8px;
+            background: rgb(223,227,223);
+            background: linear-gradient(0deg, rgba(223,227,223,1) 5%, rgba(255,255,255,1) 43%);
+            text-decoration: none;
+            height: 100%;
+            @include xxl {
+                min-width: 300px;
+            }
+            @include m {
+                min-width: 280px;
+            }
+            @include s {
+                min-width: 250px;
+            }
+            @include xs {
+                min-width: 230px;
+            }
+            .person-photo-wrapper {
+                display: flex;
+                gap: 10px;
+                
+                .person-photo {
+                    width: 100%;
+                    img {
+                        height: auto;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .person-text-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                    padding-top: 25px;
+                    align-items: flex-start;
+                    width: 50%;
+
+                    .person-title {
+                        font-size: 15px;
+                        text-transform: uppercase;
+                        color: $text-neutral-1;
+                        letter-spacing: 1px;
+                        margin: 0;
+                    }
+                    .person-name {
+                        font-size: 11px;
+                        text-transform: uppercase;
+                        color: $text-neutral-1;
+                        margin: 0;
+                        letter-spacing: 1px;
+                        line-height: 1.4;
+                    }
+                }
+            }
+            .person-comment {
+                color: $text-neutral-1;
+                letter-spacing: 1px;
+                line-height: 1.4;
+                margin: 0;
+            }
+        }
+        .person-wrapper a:hover {
+            background: rgb(190,196,190);
+            background: linear-gradient(0deg, rgba(190,196,190,1) 5%, rgba(255,255,255,1) 43%);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+    }
+}

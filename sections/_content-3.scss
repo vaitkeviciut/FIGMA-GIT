@@ -1,0 +1,165 @@
+.content-3-wrapper {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 100px 0;
+    position: relative;
+    @include xxl {
+        gap: 0;
+    }
+    @include xl {
+        grid-template-columns: 1fr 2fr;
+    }
+    @include l {
+        grid-template-columns: 40% 52%;
+    }
+    @include m {
+        grid-template-columns: 35% 55%;
+    }
+    @include s {
+        grid-template-columns: 25% 70%;
+    }
+
+    .content-3-image-wrapper {
+
+        .rectangle {
+            position: absolute;
+            left: 6%; top: 20%;
+            z-index: -100;
+            @include xxl {
+                width: 450px;
+                top: 30%; left: -2%;
+            }
+            @include xl {
+                width: 350px;
+                top: 30%; left: -5%;
+            }
+            @include l {
+                left: -12%;
+            }
+            @include m {
+                left: -27%; top: 35%;
+            }
+            @include s {
+                left: -65%;
+            }
+
+        }
+        .meeting {
+            display: flex;
+            align-items: center;
+            @include xxl {
+                width: 450px;
+                position: relative;
+                top: 10%; left: -15%;
+            }
+            @include xl {
+                width: 350px;
+                top: 15%; left: -25%;
+            }
+            @include l {
+                left: -45%;
+            }
+            @include m {
+                left: -105%; top: 25%;
+            }
+            @include s {
+                left: -300%;
+            }
+        }
+    }
+    .content-3-content-wrapper {
+        max-width: 567px;
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 100px 0 100px 40px;
+        @include xl {
+            padding: 100px 40px 100px 0;
+        }
+        .content-3-text-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+
+            .content-3-text-title-wrapper {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 17px;
+                .content-3-title-1 {
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    color: $text-color-accent;
+                    font-weight: 500;
+                    margin-bottom: 0;
+                    @include xl {
+                        font-size: 17px;
+                        
+                    }
+                    @include m {
+                        font-size: 15px;
+                    }
+
+                }
+                .content-3-title-2 {
+                    text-transform: uppercase;
+                    font-size: 35px;
+                    color: $text-color-headers;
+                    font-weight: 500;
+                    margin: 0;
+                    @include xl {
+                        font-size: 26px;
+                    }
+                    @include m {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .content-3-text {
+                color: $text-neutral-1;
+                font-size: 15px;
+                line-height: 1.4;
+                letter-spacing: 1px;
+                width: 85%;
+                @include xl {
+                    font-size: 13px;
+                }
+                @include m {
+                    font-size: 10px;
+                }
+            }
+        }
+        a.button {
+            text-decoration: none;
+            color: white;
+            width: 65%;
+            max-width: 350px;
+            min-width: 230px;
+            padding: 20px;
+            background: rgb(100,123,100);
+            background: $button-color-main;
+            display: flex;
+            justify-content: space-between;
+            @include m {
+                padding: 15px;
+                min-width: 160px;
+                width: 55%;
+            }
+            .button-text {
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 13px;
+                font-weight: 700;
+                @include m {
+                    font-size: 10px;
+                }
+            }
+        }
+        a.button:hover {
+            background: $button-color-hover;
+        }
+    }
+}
