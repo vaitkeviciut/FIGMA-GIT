@@ -40,10 +40,13 @@
                 left: -12%;
             }
             @include m {
-                left: -27%; top: 35%;
+                left: -35%; top: 35%;
             }
             @include s {
                 left: -65%;
+            }
+            @include xs {
+                left: -75%;
             }
 
         }
@@ -63,10 +66,13 @@
                 left: -45%;
             }
             @include m {
-                left: -105%; top: 25%;
+                left: -120%; top: 25%;
             }
             @include s {
                 left: -300%;
+            }
+            @include xs {
+                left: -340%;
             }
         }
     }

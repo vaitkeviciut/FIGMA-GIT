@@ -633,7 +633,6 @@ body {
   right: -55%;
   bottom: -2%;
   z-index: -100;
-  overflow: hidden;
 }
 @media (max-width: 899px) {
   .content-2-wrapper .content-2-select-wrapper .rectangle {
@@ -766,13 +765,18 @@ body {
 }
 @media (max-width: 599px) {
   .content-3-wrapper .content-3-image-wrapper .rectangle {
-    left: -27%;
+    left: -35%;
     top: 35%;
   }
 }
 @media (max-width: 489px) {
   .content-3-wrapper .content-3-image-wrapper .rectangle {
     left: -65%;
+  }
+}
+@media (max-width: 370px) {
+  .content-3-wrapper .content-3-image-wrapper .rectangle {
+    left: -75%;
   }
 }
 .content-3-wrapper .content-3-image-wrapper .meeting {
@@ -801,13 +805,18 @@ body {
 }
 @media (max-width: 599px) {
   .content-3-wrapper .content-3-image-wrapper .meeting {
-    left: -105%;
+    left: -120%;
     top: 25%;
   }
 }
 @media (max-width: 489px) {
   .content-3-wrapper .content-3-image-wrapper .meeting {
     left: -300%;
+  }
+}
+@media (max-width: 370px) {
+  .content-3-wrapper .content-3-image-wrapper .meeting {
+    left: -340%;
   }
 }
 .content-3-wrapper .content-3-content-wrapper {

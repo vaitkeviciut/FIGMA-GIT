@@ -67,7 +67,7 @@
             position: absolute;
             right: -55%; bottom: -2%;
             z-index: -100;
-            overflow: hidden;
+
             @include xl {
                display: none;
             }
